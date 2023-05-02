@@ -5,8 +5,6 @@ function montarBaralho() {
     const valores = ['ás', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'valete', 'rainha', 'rei'];
     const baralho = [];
 
-
-
     for (const nipe of nipes) {
         for (const valor of valores) {
 
@@ -20,3 +18,18 @@ function montarBaralho() {
 
 }
 console.log(montarBaralho());
+
+function montarMão(){
+
+    const numeroJogadores = parseInt(prompt('informe o numero de jogadores:'));
+    const mão = baralho.slice(Math.floor(Math.random() * baralho.length),Math.floor(Math.random() * baralho.length), Math.floor(Math.random() * baralho.length));
+
+    switch (numeroJogadores){
+        case 1: 
+    }
+
+    
+
+
+    baralho
+}

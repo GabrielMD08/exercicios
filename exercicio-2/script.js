@@ -1,22 +1,34 @@
 
-let filmes = ["matrix", "star wars", "harry potter", "jurassic park", "indiana jones"];
+let filmes = ['vingadores', 'star wars', 'bastardos inglorios'];
 let notas = [];
 
-let filme = document.getElementById('filme').value;
-// let escolha= prompt('1')
+function escolherFilme(filme) {
+    
+    filme = document.getElementById('filme').value;
+    let filmeIndex = filmes.indexOf(filme);
 
-
-
-function darNota(filme, nota) {
-
-    // filme = escolha[0].toUpperCase() + escolha.substring(1);
-    let indexFilme = filmes.indexOf(filme);
-
-    if (indexFilme === -1) {
-        alert(`Filme não encontrado: ${filme}`);
-
+    if (filmeIndex === -1) {
+        alert(`Filme "${filme}" não encontrado, tente novamente!`)
+        return;
     }
 
-    notas[indexFilme] = nota;
+    document.getElementById('titulo').innerHTML = `Filme: ${filme}`;
+    
+    switch (filmeIndex) {
+        case 0:
+            document.getElementById('cartaz').innerHTML = '<img class="cartaz" src="assets/vingadores.jpg">';
+            break;
+
+        case 1:
+            document.getElementById('cartaz').innerHTML = '<img class="cartaz" src="assets/star wars.jpg">';
+            break;
+
+        case 2:
+            document.getElementById('cartaz').innerHTML = '<img class="cartaz" src="assets/bastardos inglorios.jpg">';
+            break;
+    }
+    
 
 }
+// notas[filmeIndex] = nota;
+
