@@ -1,3 +1,24 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}
+#index-content{
+    width: 500px;
+    height: auto;
+}
+
+#nav-bar{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
 #titulo{
     text-transform: capitalize;
 }
