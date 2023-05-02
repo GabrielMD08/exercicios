@@ -4,13 +4,32 @@ body{
     justify-content: center;
 }
 #index-content{
-    width: 500px;
+    width: 100%;
     height: auto;
 }
 
 #nav-bar{
+    background-color: chocolate;
+    border-radius: 10px ;
     display: flex;
     flex-flow: row nowrap;
+    color: white;
+    justify-content: space-around;
+    border: 1px solid blue;
+}
+#nav-bar--dashboard{
+    width: 200px;
+}
+
+ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:  space-around;
+}
+
+#nav-bar--search{
+    padding: auto;
+    border: 1px solid green;
 }
 
 #logo{
