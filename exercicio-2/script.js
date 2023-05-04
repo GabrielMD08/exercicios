@@ -3,7 +3,7 @@ let filmes = ['vingadores', 'star wars', 'bastardos inglorios'];
 let notas = [];
 
 function escolherFilme(filme) {
-    
+
     filme = document.getElementById('filme').value;
     let filmeIndex = filmes.indexOf(filme);
 
@@ -13,7 +13,7 @@ function escolherFilme(filme) {
     }
 
     document.getElementById('titulo').innerHTML = `Filme: ${filme}`;
-    
+
     switch (filmeIndex) {
         case 0:
             document.getElementById('cartaz').innerHTML = '<img class="cartaz" src="assets/vingadores.jpg">';
@@ -27,8 +27,19 @@ function escolherFilme(filme) {
             document.getElementById('cartaz').innerHTML = '<img class="cartaz" src="assets/bastardos inglorios.jpg">';
             break;
     }
-    
+
 
 }
-// notas[filmeIndex] = nota;
+function darNota(filme, nota) {
+
+    filme = document.getElementById('filme').value;
+    let filmeIndex = filmes.indexOf(filme);
+    
+
+    if (nota >= 1 && nota <=5 ){
+       notas[filmeIndex] += nota;
+       alert('Sua nota foi enviada com sucesso!!\nMuito obrigado por compartilhar ....?????????')
+    }
+
+}
 

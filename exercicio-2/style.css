@@ -9,7 +9,7 @@ body{
 }
 
 #nav-bar{
-    background-color: chocolate;
+    background-color: #141a32;
     border-radius: 10px ;
     display: flex;
     flex-flow: row nowrap;
@@ -23,11 +23,17 @@ body{
     border: 1px solid fuchsia;
     
 }
-button
+
 ul{
     display: flex;
     flex-flow: row nowrap;
     justify-content:  space-around;
+    list-style: none;
+    
+}
+.dashboard-buttom{
+    background-color: antiquewhite;
+    color: black;
 }
 
 #nav-bar--search{
@@ -38,7 +44,7 @@ ul{
 }
 
 #logo{
-    width: 100px;
+    width: 150px;
     height: auto;
     border-radius: 10px;
 }
