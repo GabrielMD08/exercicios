@@ -34,11 +34,17 @@ function darNota(filme, nota) {
 
     filme = document.getElementById('filme').value;
     let filmeIndex = filmes.indexOf(filme);
-    
+    nota = document.getElementById('feedback').value;
 
     if (nota >= 1 && nota <=5 ){
        notas[filmeIndex] += nota;
-       alert('Sua nota foi enviada com sucesso!!\nMuito obrigado por compartilhar ....?????????')
+       alert('Sua nota foi enviada com sucesso!!\nMuito obrigado por compartilhar sua opinião conosco!')
+        return;
+    }
+
+    else{
+        alert('Nota invalida! Por favor, de uma nota de 1 a 5 para o filme')
+        return;
     }
 
 }
